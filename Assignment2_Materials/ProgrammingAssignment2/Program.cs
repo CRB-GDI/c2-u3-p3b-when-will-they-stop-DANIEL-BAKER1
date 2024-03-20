@@ -34,8 +34,19 @@ namespace ProgrammingAssignment2
 				// course add more space between the
 				// comments as needed
 
+				//Data types to store the numbers
+				float sum = 0;
+				int numCount = 0;
+				int value = GetValue();
 
+				while (value != -1)
+				{
+					numCount++; 
+					value = GetValue();
+				}
+					
 
+				
 				// Don't add or modify any code below
 				// this comment
 				input = Console.ReadLine();
