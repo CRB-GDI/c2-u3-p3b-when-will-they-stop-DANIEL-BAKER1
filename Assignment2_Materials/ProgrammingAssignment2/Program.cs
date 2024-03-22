@@ -35,17 +35,25 @@ namespace ProgrammingAssignment2
 				// comments as needed
 
 				//Data types to store the numbers
-				float sum = 0;
+				int sum = 0;
 				int numCount = 0;
 				int value = GetValue();
+				float mean = 0f;
 
+				// While loop below this comment
 				while (value != -1)
 				{
-					numCount++; 
+					numCount++;
+					sum = sum + value;
 					value = GetValue();
 				}
-					
 
+				//If statment
+				if (numCount > 0)
+				{
+					mean =(float)sum / numCount;
+				}
+				Console.WriteLine(numCount + " " + mean);
 				
 				// Don't add or modify any code below
 				// this comment
